@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fruit Bowl Customer App 🍎
 
 A mobile-first customer frontend for a fruit bowl delivery app, built with React and Vite. This app is designed to feel like a native mobile app but runs in a web browser for easy development and preview.
@@ -183,3 +184,6 @@ src/
 
 This project is for development and preview purposes.
 
+=======
+# FruitBowl_frontend
+>>>>>>> e44b39673fe06582735c093ae4e0560044adcd7c
