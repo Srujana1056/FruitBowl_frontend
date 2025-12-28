@@ -1,0 +1,289 @@
+.bowl-builder-screen {
+  min-height: 100vh;
+  background: var(--color-cream);
+  padding-bottom: 100px;
+}
+
+.bowl-builder-header {
+  background: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-yellow-pastel) 100%);
+  padding: var(--spacing-lg);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-xs);
+}
+
+.builder-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.bowl-builder-content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.bowl-name-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.bowl-name-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.bowl-name-input {
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  background: var(--color-white);
+  color: var(--color-text-dark);
+  transition: all var(--transition-fast);
+}
+
+.bowl-name-input:focus {
+  border-color: var(--color-green-light);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(184, 230, 184, 0.2);
+}
+
+.selected-fruits-section {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.selected-fruits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.selected-fruit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  gap: var(--spacing-md);
+}
+
+.selected-fruit-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex: 1;
+}
+
+.selected-fruit-emoji {
+  font-size: 2rem;
+}
+
+.selected-fruit-img {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.selected-fruit-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.selected-fruit-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.selected-fruit-price {
+  font-size: 0.875rem;
+  color: var(--color-text-medium);
+}
+
+.selected-fruit-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.remove-fruit-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  transition: transform var(--transition-fast);
+}
+
+.remove-fruit-btn:active {
+  transform: scale(0.9);
+}
+
+.available-fruits-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.fruits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.fruit-select-card {
+  position: relative;
+}
+
+.in-bowl-badge {
+  position: absolute;
+  top: var(--spacing-xs);
+  left: var(--spacing-xs);
+  background: var(--color-green-light);
+  color: var(--color-text-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+.price-summary-section {
+  position: sticky;
+  bottom: 80px;
+  z-index: 10;
+}
+
+.add-to-cart-section {
+  margin-top: var(--spacing-md);
+}
+
+.subscription-mode-info {
+  background: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-yellow-pastel) 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.subscription-mode-text {
+  font-size: 0.9375rem;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--spacing-xs);
+}
+
+.subscription-mode-helper {
+  font-size: 0.875rem;
+  color: var(--color-text-medium);
+  text-align: center;
+  font-weight: 500;
+}
+
+.fruits-limit-text {
+  font-size: 0.875rem;
+  color: var(--color-text-medium);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.fruit-select-card.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.max-fruits-badge {
+  position: absolute;
+  top: var(--spacing-xs);
+  left: var(--spacing-xs);
+  background: var(--color-peach);
+  color: var(--color-text-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+.bowl-options-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--spacing-lg);
+}
+
+.bowl-options-content {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  max-width: 400px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+}
+
+.bowl-options-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-xs);
+  text-align: center;
+}
+
+.bowl-options-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-medium);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.bowl-options-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.bowl-option-description {
+  font-size: 0.875rem;
+  color: var(--color-text-medium);
+  text-align: center;
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+

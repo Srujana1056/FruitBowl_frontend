@@ -1,0 +1,211 @@
+.checkout-screen {
+  min-height: 100vh;
+  background: var(--color-cream);
+  padding-bottom: 100px;
+}
+
+.checkout-header {
+  background: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-yellow-pastel) 100%);
+  padding: var(--spacing-lg);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-xs);
+}
+
+.checkout-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.checkout-content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.subscription-info-banner {
+  background: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-yellow-pastel) 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.subscription-info-text {
+  font-size: 0.9375rem;
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.one-time-info-banner {
+  background: linear-gradient(135deg, var(--color-peach) 0%, var(--color-orange-light) 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.one-time-info-text {
+  font-size: 0.9375rem;
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.order-bowl-details {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.order-bowl-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-medium);
+  margin-bottom: var(--spacing-xs);
+}
+
+.order-bowl-item {
+  font-size: 0.875rem;
+  color: var(--color-text-medium);
+  margin-bottom: 0.25rem;
+}
+
+.address-card,
+.payment-card,
+.order-summary-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.edit-button {
+  background: transparent;
+  border: none;
+  color: var(--color-green-soft);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+.edit-button:active {
+  opacity: 0.7;
+}
+
+.address-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.address-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.address-line {
+  font-size: 1rem;
+  color: var(--color-text-medium);
+}
+
+.address-phone {
+  font-size: 0.9375rem;
+  color: var(--color-text-medium);
+  margin-top: var(--spacing-xs);
+}
+
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.payment-icon {
+  font-size: 2rem;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.payment-type {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.payment-number {
+  font-size: 0.875rem;
+  color: var(--color-text-medium);
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item-name {
+  font-size: 0.9375rem;
+  color: var(--color-text-medium);
+}
+
+.order-item-price {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.place-order-section {
+  position: sticky;
+  bottom: 80px;
+  z-index: 10;
+}
+

@@ -1,0 +1,152 @@
+.fruit-detail-screen {
+  min-height: 100vh;
+  background: var(--color-cream);
+  padding-bottom: 100px;
+}
+
+.back-button {
+  position: sticky;
+  top: 0;
+  background: var(--color-white);
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.fruit-detail-content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.fruit-detail-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-yellow-pastel) 100%);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.fruit-large-emoji {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.fruit-large-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seasonal-badge-large {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background: var(--color-peach);
+  color: var(--color-text-dark);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.fruit-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.fruit-detail-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.fruit-detail-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-green-soft);
+}
+
+.fruit-detail-description {
+  font-size: 1rem;
+  color: var(--color-text-medium);
+  line-height: 1.6;
+}
+
+.nutrition-info {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.nutrition-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.nutrition-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.nutrition-label {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.nutrition-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.quantity-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.quantity-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+}
+
+.error-state p {
+  font-size: 1.125rem;
+  color: var(--color-text-medium);
+}
+
